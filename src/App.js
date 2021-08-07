@@ -4,7 +4,7 @@ import ReactHooksER from "./React_Hooks_ER/React_Hooks_ER_Router"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <nav>
             <ul>

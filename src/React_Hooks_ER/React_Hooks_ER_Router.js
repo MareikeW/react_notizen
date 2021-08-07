@@ -3,17 +3,20 @@ import Greeting from "./01";
 import Greeting02 from "./02";
 import Greeting02Extra from "./02_Extra";
 import RefBeispiel from "./refBeispiel";
+import ReducerBeispiel from "./reducerBeispiel";
 
 // Unser Menü für sämtliche React Hooks Aufgaben
 function ReactHooksER() {
+  const navStyles = {
+    width: 80 + "%",
+    margin: "50px auto"
+  }
+
   return (
     <div className="App">
       <Router>
         <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
+            <ul style={navStyles}>
 
               <li>
                 <Link to="/01-greeting">01 Greeting</Link>
@@ -28,7 +31,11 @@ function ReactHooksER() {
               </li>
 
               <li>
-                <Link to="/useRef-beispiel">useRef-Beispiel</Link>
+                <Link to="/useref-beispiel">useRef-Beispiel</Link>
+              </li>
+
+              <li>
+                <Link to="/usereducer-beispiel">useReducer-Beispiel</Link>
               </li>
               
             </ul>
@@ -48,6 +55,10 @@ function ReactHooksER() {
 
           <Route path="/useRef-beispiel">
               <RefBeispiel />
+          </Route>
+
+          <Route path="/usereducer-beispiel">
+              <ReducerBeispiel />
           </Route>
         </Switch>
       </Router>

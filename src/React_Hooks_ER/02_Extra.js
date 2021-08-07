@@ -21,7 +21,7 @@ function Greeting02Extra({initialName = ''}) {
     setName(event.target.value)
   }
   return (
-    <div>
+    <div className="component">
       <form>
         <label htmlFor="name">Name: </label>
         <input value={name} onChange={handleChange} id="name" />
