@@ -41,5 +41,21 @@ Die fünf häufigsten Hooks:
     a) Fokussierung oder Media
     b) zur Auslösung von Animationen
     c) zur Interaktion mit DOM-Bibliotheken
-- Siehe auch Beispiel in Scrimba FCP: Textfeld soll nach jedem Buttonklick automatisch wieder fokussiert werden.
-      
+- Siehe auch Beispiel in refBeispiel.js: Textfeld soll nach jedem Buttonklick automatisch wieder fokussiert werden.
+
+
+5. React.useReducer
+- Alternative zu useState.
+- Gibt einen state und ein dispatch zurück [state, dispatch]
+- Alle Zustandsvariablen leben in "state" und alle actions, die wir an den Reducer schicken wollen,
+    leben in "dispatch".
+- useReducer() nimmt zwei Parameter: 1. reducer-Funktion, 2. initialer Zustand
+
+           reducer-Funktion besteht aus:  state (current state); action (action, die ausgeführt werden soll)
+- const [state, dispatch] = useReducer((state, action) => {
+    ...
+    }, {
+        count: 0 // initialer Zustand
+    })
+- useReducer ist gut, wenn man mehrere ähnliche Actions hat, wie z. B. count + 1; count - 1; count / 2 usw. Dann hat man alles zusammen in einer Funktion.
+- Beispiel: reducerBeispiel.js
