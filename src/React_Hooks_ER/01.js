@@ -20,7 +20,7 @@ function Greeting({initialName}) {
   }
 
   return (
-    <div>
+    <div className="component">
       <form>
         <label htmlFor="name">Name: </label>
         <input onChange={handleChange} id="name" value={name} />

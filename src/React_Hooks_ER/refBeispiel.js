@@ -26,7 +26,7 @@ function RefBeispiel() {
     const allTodos = todosList.map(todo => <p key={todo}>{todo}</p>);
     
     return (
-        <div>
+        <div className="component">
             <form>
                 <input ref={inputRef} type="text" name="todo" value={newTodoValue} onChange={handleChange}/>
                 <button onClick={addTodo}>Add todo item</button>

@@ -6,14 +6,16 @@ import RefBeispiel from "./refBeispiel";
 
 // Unser Menü für sämtliche React Hooks Aufgaben
 function ReactHooksER() {
+  const navStyles = {
+    width: 80 + "%",
+    margin: "50px auto"
+  }
+
   return (
     <div className="App">
       <Router>
         <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
+            <ul style={navStyles}>
 
               <li>
                 <Link to="/01-greeting">01 Greeting</Link>
