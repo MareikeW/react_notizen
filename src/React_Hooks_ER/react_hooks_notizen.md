@@ -59,3 +59,7 @@ Die fünf häufigsten Hooks:
     })
 - useReducer ist gut, wenn man mehrere ähnliche Actions hat, wie z. B. count + 1; count - 1; count / 2 usw. Dann hat man alles zusammen in einer Funktion.
 - Beispiel: reducerBeispiel.js
+
+Was versteht man unter Lazy State Initialization?
+- Anstelle eines Anfangswerts wird in useState eine Funktion angegeben, die den Anfangswert nach Aufruf zurückgibt.
+- Das passiert dann nicht bei jedem Reredern, sondern nur beim allerersten Rendering der Komponente.

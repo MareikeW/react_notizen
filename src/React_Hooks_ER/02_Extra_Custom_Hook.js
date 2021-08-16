@@ -1,4 +1,9 @@
 // Extra Credit - Custom Hook
+/*
+The best part of hooks is that if you find a bit of logic inside your component function that you think would be useful elsewhere, you can put that in another function and call it from the components that need it (just like regular JavaScript). These functions you create are called "custom hooks".
+
+Create a custom hook called useLocalStorageState for reusability of all this logic.
+*/
 import * as React from 'react'
 
 // Custom Hook, die in verschiedenen Komponenten wiederverwendet werden kann.
@@ -13,7 +18,7 @@ function useLocalStorageStage(key, defaultValue = "") {
 
   return [state, setState];
 }
-function Greeting02Extra({initialName = ''}) {
+function Greeting02ExtraCustomHook({initialName = ''}) {
   // 🐨 initializes the state to the value from localStorage
   const [name, setName] = useLocalStorageStage("name", initialName);
 
@@ -31,4 +36,4 @@ function Greeting02Extra({initialName = ''}) {
   )
 }
 
-export default Greeting02Extra;
+export default Greeting02ExtraCustomHook;
