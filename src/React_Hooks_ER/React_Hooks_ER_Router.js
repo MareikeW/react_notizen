@@ -5,6 +5,7 @@ import Greeting02ExtraCustomHook from "./02_Extra_Custom_Hook";
 import Greeting02ExtraLazyStateInitialization from "./02_Extra_Lazy_State_Initialization";
 import App03 from "./03_Lifting_State";
 import App03ExtraColocatingState from "./03_Extra_Credit_Colocating_State";
+import App04TicTacToe from "./04_tictactoe";
 import RefBeispiel from "./refBeispiel";
 import ReducerBeispiel from "./reducerBeispiel";
 
@@ -42,7 +43,11 @@ function ReactHooksER() {
               </li>
 
               <li>
-                <Link to="App03ExtraColocatingState">03 Extra Colocating State</Link>
+                <Link to="/03-extra-colocating-state">03 Extra Colocating State</Link>
+              </li>
+
+              <li>
+                <Link to="/04-tic-tac-toe">04 Tic Tac Toe</Link>
               </li>
 
               <li>
@@ -76,8 +81,12 @@ function ReactHooksER() {
               <App03 />
           </Route>
 
-          <Route path="App03ExtraColocatingState">
+          <Route path="/03-extra-colocating-state">
               <App03ExtraColocatingState />
+          </Route>
+
+          <Route path="/04-tic-tac-toe">
+            <App04TicTacToe />
           </Route>
 
           <Route path="/useRef-beispiel">

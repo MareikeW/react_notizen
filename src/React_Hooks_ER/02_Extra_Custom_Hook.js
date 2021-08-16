@@ -7,7 +7,7 @@ Create a custom hook called useLocalStorageState for reusability of all this log
 import * as React from 'react'
 
 // Custom Hook, die in verschiedenen Komponenten wiederverwendet werden kann.
-function useLocalStorageStage(key, defaultValue = "") {
+function useLocalStorageState(key, defaultValue = "") {
   const [state, setState] = React.useState(
     () => window.localStorage.getItem(key) || defaultValue
   )
@@ -20,7 +20,7 @@ function useLocalStorageStage(key, defaultValue = "") {
 }
 function Greeting02ExtraCustomHook({initialName = ''}) {
   // 🐨 initializes the state to the value from localStorage
-  const [name, setName] = useLocalStorageStage("name", initialName);
+  const [name, setName] = useLocalStorageState("name", initialName);
 
   function handleChange(event) {
     setName(event.target.value)

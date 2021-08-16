@@ -78,3 +78,8 @@ Was ist der Unterschied zwischen "lift state" (Zustand anheben) und "colocate st
 - lift state: Wenn zwei oder mehr Geschwisterkomponenten denselben Zustand brauchen, dann hebt man diesen Zustand soweit im Komponentenbaum hoch, bis eine gemeinsame Elternkomponente gefunden wurde.
 
 - colocate state: Ein Zustand wurde weiter oben im Komponentenbaum angelegt, weil mehrere Kindkomponenten diesen brauchten. Wenn jetzt eine oder mehrere Kindkomponenten wegfallen und der Zustand z. B. nur noch für eine Komponente gebraucht wird, senkt man den Zustand runter in diese Komponente, wo er dann "lebt". So muss der Zustand nicht mehr über props heruntergegeben werden.
+
+
+Was ist der Unterschied zwischen "managed state" und "derived state"?
+1. Managed State: Ein Zustand, den man explizit managen muss.
+2. Derived State: Ein Zustand, der auf Basis eines anderen Zustands berechnet wird.
