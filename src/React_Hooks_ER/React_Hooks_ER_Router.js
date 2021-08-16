@@ -6,6 +6,7 @@ import Greeting02ExtraLazyStateInitialization from "./02_Extra_Lazy_State_Initia
 import App03 from "./03_Lifting_State";
 import App03ExtraColocatingState from "./03_Extra_Credit_Colocating_State";
 import App04TicTacToe from "./04_tictactoe";
+import App05useRefuseEffect from "./05_useRef_useEffect_DOM_interaction";
 import RefBeispiel from "./refBeispiel";
 import ReducerBeispiel from "./reducerBeispiel";
 
@@ -51,6 +52,10 @@ function ReactHooksER() {
               </li>
 
               <li>
+                <Link to="/useref-useeffect-dom-interaction">useRef and useEffect: DOM interaction</Link>
+              </li>
+
+              <li>
                 <Link to="/useref-beispiel">useRef-Beispiel</Link>
               </li>
 
@@ -87,6 +92,10 @@ function ReactHooksER() {
 
           <Route path="/04-tic-tac-toe">
             <App04TicTacToe />
+          </Route>
+
+          <Route path="/useref-useeffect-dom-interaction">
+            <App05useRefuseEffect />
           </Route>
 
           <Route path="/useRef-beispiel">
