@@ -1,7 +1,11 @@
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Greeting from "./01";
-import Greeting02 from "./02";
-import Greeting02Extra from "./02_Extra";
+import Greeting from "./01_useState";
+import Greeting02 from "./02_useEffect";
+import Greeting02ExtraCustomHook from "./02_Extra_Custom_Hook";
+import Greeting02ExtraLazyStateInitialization from "./02_Extra_Lazy_State_Initialization";
+import App03 from "./03_Lifting_State";
+import App03ExtraColocatingState from "./03_Extra_Credit_Colocating_State";
+import App04TicTacToe from "./04_tictactoe";
 import RefBeispiel from "./refBeispiel";
 import ReducerBeispiel from "./reducerBeispiel";
 
@@ -27,7 +31,23 @@ function ReactHooksER() {
               </li>
 
               <li>
-                <Link to="/02-greeting-extra">02 Greeting Extra</Link>
+                <Link to="/02-greeting-extra-lazy-state-initialization">02 Greeting Extra Lazy State Initialization</Link>
+              </li>
+
+              <li>
+                <Link to="/02-greeting-extra">02 Greeting Extra Custom Hook</Link>
+              </li>
+
+              <li>
+                <Link to="/03-lifting-state">03 Lifting State</Link>
+              </li>
+
+              <li>
+                <Link to="/03-extra-colocating-state">03 Extra Colocating State</Link>
+              </li>
+
+              <li>
+                <Link to="/04-tic-tac-toe">04 Tic Tac Toe</Link>
               </li>
 
               <li>
@@ -49,8 +69,24 @@ function ReactHooksER() {
               <Greeting02 />
           </Route>
 
-          <Route path="/02-greeting-extra">
-              <Greeting02Extra />
+          <Route path="/02-greeting-extra-lazy-state-initialization">
+              <Greeting02ExtraLazyStateInitialization />
+          </Route>
+
+          <Route path="/02-greeting-extra-custom-hook">
+              <Greeting02ExtraCustomHook />
+          </Route>
+
+          <Route path="/03-lifting-state">
+              <App03 />
+          </Route>
+
+          <Route path="/03-extra-colocating-state">
+              <App03ExtraColocatingState />
+          </Route>
+
+          <Route path="/04-tic-tac-toe">
+            <App04TicTacToe />
           </Route>
 
           <Route path="/useRef-beispiel">
