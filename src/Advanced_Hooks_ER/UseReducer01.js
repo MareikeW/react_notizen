@@ -1,4 +1,5 @@
 import * as React from 'react';
+/* Ändere useState zu useReducer */
 
 // 1. Argument: aktueller Wert von count
 // 2. Argument: Wert, der an setCount weitergeben wird

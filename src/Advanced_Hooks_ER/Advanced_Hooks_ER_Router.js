@@ -1,5 +1,7 @@
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import UseReducer01 from "./useReducer01";
+import UseReducer01 from "./UseReducer01";
+import UseReducer01Extra02 from "./UseReducer01Extra2";
+import UseReducer01Extra04 from "./UseReducer01Extra04";
 
 // Unser Menü für sämtliche React Hooks Aufgaben
 function AdvancedHooksER() {
@@ -13,13 +15,15 @@ function AdvancedHooksER() {
       <Router>
         <nav>
             <ul style={navStyles}>
-
               <li>
                 <Link to="/01-useReducer">01 useReducer</Link>
               </li>
-
-              
-              
+              <li>
+                <Link to="/01-useReducer-extra2">01 useReducer Extra 2</Link>
+              </li> 
+              <li>
+                <Link to="/01-useReducer-extra4">01 useReducer Extra 4</Link>
+              </li>
             </ul>
           </nav>
         <Switch>
@@ -27,7 +31,13 @@ function AdvancedHooksER() {
             <UseReducer01 />
           </Route>
 
-          
+          <Route path="/01-useReducer-extra2">
+            <UseReducer01Extra02 />
+          </Route>
+
+          <Route path="/01-useReducer-extra4">
+            <UseReducer01Extra04 />
+          </Route>
         </Switch>
       </Router>
     </div>
