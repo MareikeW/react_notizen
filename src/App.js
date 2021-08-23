@@ -10,9 +10,6 @@ function App() {
         <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
                 <Link to="/react-hooks-er">React Hooks Epic React</Link>
               </li>
               <li>
