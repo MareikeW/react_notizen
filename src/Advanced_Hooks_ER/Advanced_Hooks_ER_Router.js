@@ -3,6 +3,9 @@ import UseReducer01 from "./UseReducer01";
 import UseReducer01Extra02 from "./UseReducer01Extra2";
 import UseReducer01Extra04 from "./UseReducer01Extra04";
 import UseCallbackExample from "./UseCallbackExample";
+import UseContext01 from "./UseContext03";
+import UseContext03Extra1 from "./UseContext03Extra1";
+import UseLayoutEffect01 from "./UseLayoutEffect01";
 
 // Unser Menü für sämtliche React Hooks Aufgaben
 function AdvancedHooksER() {
@@ -28,6 +31,15 @@ function AdvancedHooksER() {
               <li>
                 <Link to="/02-useCallback-example">02 useCallback-Beispiel</Link>
               </li>
+              <li>
+                <Link to="/03-useContext">03 useContext</Link>
+              </li>
+              <li>
+                <Link to="/03-useContext-extra1">03 useContext Extra 1</Link>
+              </li>
+              <li>
+                <Link to="/04-useLayoutEffect">04 useLayoutEffect</Link>
+              </li>
             </ul>
           </nav>
         <Switch>
@@ -46,6 +58,18 @@ function AdvancedHooksER() {
           <Route path="/02-useCallback-example">
             <UseCallbackExample />
           </Route>
+
+          <Route path="/03-useContext">
+            <UseContext01 />
+          </Route>
+
+          <Route path="/03-useContext-extra1">
+            <UseContext03Extra1 />
+          </Route>
+
+          <Route path="/04-useLayoutEffect">
+            <UseLayoutEffect01 />
+          </Route>        
         </Switch>
       </Router>
     </div>

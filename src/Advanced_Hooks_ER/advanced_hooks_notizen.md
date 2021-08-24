@@ -13,3 +13,8 @@ Wann sollte man useState und wann useReducer benutzen?
 
 --> useState: Wenn man nur einen Zustand hat, oder Zustände, die unabhängig voneinander sind.
 --> useReducer: Wenn ein Element aus dem Zustand vom Wert eines anderen Elements aus dem Zustand abhängt, um sich zu aktualisieren.
+
+
+Wann sollte man useLayoutEffect benutzen?
+
+--> Wenn du beobachtbare Änderungen in der DOM machst, benutze useLayoutEffect, sonst useEffect.
