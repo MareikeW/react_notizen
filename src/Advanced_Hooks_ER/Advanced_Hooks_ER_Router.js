@@ -7,6 +7,7 @@ import UseContext01 from "./UseContext03";
 import UseContext03Extra1 from "./UseContext03Extra1";
 import UseLayoutEffect01 from "./UseLayoutEffect01";
 import UseImperativeHandle01 from "./UseImperativeHandle01";
+import UseDebugValue01 from "./UseDebugValue01";
 
 // Unser Menü für sämtliche React Hooks Aufgaben
 function AdvancedHooksER() {
@@ -44,6 +45,9 @@ function AdvancedHooksER() {
               <li>
                 <Link to="/05-useImperativeHandle">05 useImperativeHandle</Link>
               </li>
+              <li>
+                <Link to="/06-useDebugValue">06 useDebugValue</Link>
+              </li>
             </ul>
           </nav>
         <Switch>
@@ -77,7 +81,11 @@ function AdvancedHooksER() {
 
           <Route path="/05-useImperativeHandle">
             <UseImperativeHandle01 />
-          </Route>       
+          </Route>    
+
+          <Route path="/06-useDebugValue">
+            <UseDebugValue01 />
+          </Route>   
         </Switch>
       </Router>
     </div>
